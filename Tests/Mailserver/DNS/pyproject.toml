@@ -1,0 +1,18 @@
+[project]
+name = "dns-dkim-checker"
+version = "1.0.0"
+description = "CLI tool to test DKIM DNS records"
+readme = "README.md"
+requires-python = ">=3.14"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Sascha Frank <sascha.frank.88@gmx.de>" }
+]
+
+dependencies = [
+    "dnspython>=2.6.0"
+]
+
+[project.scripts]
+dns-dkim-check = "test_dns-dkim:main"
